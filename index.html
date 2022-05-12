@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    
+    <title>Let's Play Tic Tac Toe</title>
+</head>
+<body>
+    <div class="container">
+            <div class="heading">
+                <h1>TIC TAC TOE</h1>
+                <p id="player1">1st Player : <span>X</span></p>
+                <p id="player2">2nd Player  : <span>O</span></p>
+            </div>
+            <div class="box-body">
+                <div class="row border-bottom">
+                    <div id="row-1-1" class="cell1 text" onclick="myfunc_3(); myfunc();"></div>
+                    <div id="row-1-2" class="cell2 text" onclick="myfunc_4(); myfunc();"></div>
+                    <div id="row-1-3" class="cell3 text" onclick="myfunc_5(); myfunc();"></div>
+                </div>
+                <div class="row border-bottom">
+                    <div id="row-2-1" class="cell1 text" onclick="myfunc_6(); myfunc();"></div>
+                    <div id="row-2-2" class="cell2 text" onclick="myfunc_7(); myfunc();"></div>
+                    <div id="row-2-3" class="cell3 text" onclick="myfunc_8(); myfunc();"></div>
+                </div>
+                <div class="row">
+                    <div id="row-3-1" class="cell1 text" onclick="myfunc_9(); myfunc();"></div>
+                    <div id="row-3-2" class="cell2 text" onclick="myfunc_10(); myfunc();"></div>
+                    <div id="row-3-3" class="cell3 text" onclick="myfunc_11(); myfunc();"></div>
+                </div>
+            </div>
+            <div class="chance">
+                <p id="winner">Player's Chance :<span id="chance"> 1st Player Turn </span> </p>
+            </div>
+            <button class="cta" onclick="myfunc_2();">
+                <span>Reset</span>
+                <svg viewBox="0 0 13 10" height="10px" width="15px">
+                  <path d="M1,5 L11,5"></path>
+                  <polyline points="8 1 12 5 8 9"></polyline>
+                </svg>
+              </button>
+    </div>
+</body>
+</html>
